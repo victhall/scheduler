@@ -5,7 +5,7 @@ import React from 'react';
 export default function DayListItem(props) {
   let dayClass = classNames("day-list__item", {
     "day-list__item--selected": props.selected,
-    "day-list__item--full": props.spots,
+    "day-list__item--full": !props.spots,
   });
 
   function formatSpots (spots) {
