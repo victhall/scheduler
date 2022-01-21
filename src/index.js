@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import DayList from "components/DayList";
 
 import "index.scss";
 
