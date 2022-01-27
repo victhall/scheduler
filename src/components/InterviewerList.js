@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import "components/InterviewerList.scss"
 import InterviewerListItem from "./InterviewerListItem";
 
@@ -18,5 +19,6 @@ export default function InterviewerList(props) {
         })}
       </ul>
     </section>
-  );
+    
+  );  
 }
