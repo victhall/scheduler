@@ -17,10 +17,8 @@ export default function useVisualMode(initial) {
     setMode(initial);
 
     if (history.length !== 1) {
-
       setMode(history[history.length - 2]);
-      history.pop();
-      setHistory(history);
+      setHistory(history.slice(0, history.length - 1));
     }
   }
 

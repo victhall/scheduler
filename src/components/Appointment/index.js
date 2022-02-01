@@ -33,7 +33,7 @@ export default function Appointment(props) {
 
     props.bookInterview(props.id, interview)
       .then(() => transition(SHOW))
-      .catch(error => transition(ERROR_SAVE, true));
+      .catch(() => transition(ERROR_SAVE, true));
   }
 
   function deleteAppointment() {
@@ -59,7 +59,7 @@ export default function Appointment(props) {
       {mode === CREATE && <Form interviewers={props.interviewers} onCancel={back} onSave={save} />}
       {mode === SHOW && (<Show student={props.interview.student} interviewer={props.interview.interviewer} onDelete={confirm} onEdit={edit} />)}
       {mode === CONFIRM && <Confirm onCancel={back} onConfirm={deleteAppointment} message="Are you sure you want remove this appointment?" />}
-      {mode === EDIT && <Form interviewers={props.interviewers} onSave={save} onCancel={back} />}
+      {mode === EDIT && <Form interviewers={props.interviewers} onSave={save} onCancel={back} student={props.interview.student} interviewer={props.interview.interviewer.id}/>}
 
       {mode === SAVING && <Status message="Saving" />}
       {mode === DELETING && <Status message="Deleting" />}
