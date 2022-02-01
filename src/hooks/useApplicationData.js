@@ -40,8 +40,6 @@ export default function useApplicationData() {
   }
 
   function bookInterview(id, interview) {
-    console.log(id, interview);
-
     const appointment = {
       ...state.appointments[id],
       interview: { ...interview }
@@ -54,7 +52,6 @@ export default function useApplicationData() {
 
     return axios.put(`/api/appointments/${id}`, appointment)
       .then((res) => {
-        console.log(res);
         setState((prev) => ({ ...prev, appointments }));
         updateSpots()
       })

@@ -1,6 +1,6 @@
 # Interview Scheduler
 
-A single page web application developed using React as a part of the Lighthouse Labs curriculum. Interview Scheduler is simple appointment scheduling tool. Users can click on an empty timeslot (denoted by the plus sign) and are prompted to enter their name and select an interviewer of their choice to book an appointment. Users can edit, delete, and cancel appointments.
+A single page web application developed using React as a part of the Lighthouse Labs curriculum. Interview Scheduler is a simple appointment scheduling tool. Users can click on an empty timeslot (denoted by the plus sign) and are prompted to enter their name and select an interviewer of their choice to book an appointment. Users can edit, delete, and cancel appointments.
 
 ## Setup
 
@@ -23,6 +23,11 @@ npm test
 ```sh
 npm run storybook
 ```
+## Get Started
+
+Install all dependencies (using the npm install command) in the root directory.
+Get and install the [server](https://github.com/lighthouse-labs/scheduler-api).
+Run both the server and the client using npm start in seperate terminal windows.
 
 ## Dependencies
 
@@ -30,12 +35,8 @@ npm run storybook
 axios: 0.25.0
 classnames: 2.2.6
 normalize.css: 8.0.1
-react: 16.14.0
+react: 16.9.0
 react-dom: 16.9.0
-react-scripts: 3.0.0
-testing-library/jest-dom: 4.0.0
-testing-library/react: 8.0.7
-@testing-library/react-hooks: 7.0.2
 react-test-renderer: 16.9.0
 ```
 
