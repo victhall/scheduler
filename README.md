@@ -1,6 +1,6 @@
 # Interview Scheduler
 
-A single page web application developed using React as a part of the Lighthouse Labs curriculum. Interview Scheduler is a simple appointment scheduling tool. Users can click on an empty timeslot (denoted by the plus sign) and are prompted to enter their name and select an interviewer of their choice to book an appointment. Users can edit, delete, and cancel appointments.
+A single page web application developed using React. Interview Scheduler is a simple appointment scheduling tool. Users can click on an empty timeslot (denoted by the plus sign) and are prompted to enter their name and select an interviewer of their choice to book an appointment. Users can edit, delete, and cancel appointments.
 
 ## Get Started
 
